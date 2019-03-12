@@ -10,10 +10,10 @@ Also in rural areas internet connectivity is very low due to which people are no
 
 A comprehensive framework to integrate the entire mail operations  right from booking to delivery into an online  system which can handle connectivity disturbances: 
 </br>
--> A web application and an android mobile application enabling the customers to get the status of their consignment.→→
+-> A web application and an android mobile application enabling the customers to get the status of their consignment.
 </br>
--> A USSD application enabling the customers to track their consignment in case of no internet connection.→→
+-> A USSD application enabling the customers to track their consignment in case of no internet connection.
 </br>
--> A desktop application for managing and administrating the various operations in the post-office which works in an offline mode.→→
+-> A desktop application for managing and administrating the various operations in the post-office which works in an offline mode.
 </br>
--> A web application for various  post office server operations where there is no internet fluctuation.→→
+-> A web application for various  post office server operations where there is no internet fluctuation.
