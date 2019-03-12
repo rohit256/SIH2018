@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Post Office</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="Functions.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://powerful-journey-58722.herokuapp.com/">Indian Post</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="https://powerful-journey-58722.herokuapp.com/"> Home</a></li>
+        
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+           <!-- <form action="/main_server" method="get">
+                <button type="submit">Login</button>
+            </form> -->
+           <a href="https://powerful-journey-58722.herokuapp.com/main_server">Login</a> 
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+  <!--<div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="" contenteditable="false"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active" contenteditable="false"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="" contenteditable="false"></li>
+    </ol>
+    <div class="carousel-inner" >
+        <div class="item" style="" width="100%">
+            <img src="indianpost.jpg" alt="" class="" >
+            
+        </div>
+        <div class="item active">
+            <img src="darpan.jpg" alt="" class=""  style="position: relative; top:0; left:0; width:100%;">
+            
+        </div>
+        <div class="item" style="">
+            <img src="make2.jpg" alt="" class=""  style="position: relative; top:0; left:0; width:100%;">
+            
+        </div>
+    </div>    
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>-->
+	<div class="" role="banner" aria-label="DOP_banners">
+
+    <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+    <div id="ctl00_SPWebPartManager1_g_b2ce0a1c_928c_4ecd_877f_df98cc1b2e11_ctl00_divLinks"><ol class='carousel-indicators'><li data-target='#bannerCarousel' data-slide-to='0'></li><li data-target='#bannerCarousel' data-slide-to='1'></li><li data-target='#bannerCarousel' data-slide-to='2'></li></ol></div>
+    
+    <div id="ctl00_SPWebPartManager1_g_b2ce0a1c_928c_4ecd_877f_df98cc1b2e11_ctl00_divBanner" class="carousel-inner banner ">
+	<div class='item active'> 
+	<a href='/MBE/Pages/Content/International-Tracked-Packet-.aspx'>
+	<img alt="International Tracked Packets" src="https://www.indiapost.gov.in/VAS/PublishingImages/Darpan.jpg"> </a>
+	</div>
+	<div class='item' ><a href='http://cept.gov.in/survey/survey.aspx'>
+	<img alt="Click to give your feedback" src="https://www.indiapost.gov.in/VAS/PublishingImages/Darpan.jpg" style="BORDER: 0px solid; "></a></div><div class='item' >
+	<a href='https://www.indiapost.gov.in/VAS/Pages/News/Darpan.pdf'>
+	<img alt="DARPAN- Digital Advancement of Rural Post Office For A New India " src="https://www.indiapost.gov.in/VAS/PublishingImages/Darpan.jpg" style="BORDER: 0px solid; " width="100%"></a></div></div>
+    
+    <a class="left carousel-control" href="#bannerCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left glyphicon-menu-left"></span>
+        <span id="ctl00_SPWebPartManager1_g_b2ce0a1c_928c_4ecd_877f_df98cc1b2e11_ctl00_lblPrevious" class="sr-only">Previous</span>
+      
+    </a>
+    <a class="right carousel-control" href="#bannerCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right glyphicon-menu-right"></span>
+      <span id="ctl00_SPWebPartManager1_g_b2ce0a1c_928c_4ecd_877f_df98cc1b2e11_ctl00_lblNext" class="sr-only">Next</span>
+      
+    </a>
+  </div>
+</div>
+
+<style>
+    .ms-webpart-chrome-vertical {display:block !important;    }
+    .ms-webpart-cell-vertical{display:block !important;    }
+    .ms-webpart-zone{display:block !important;    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('.carousel').carousel({
+            interval: 8000
+        })
+    });
+</script>
+
+<!--End of the banner-->
+
+    </div><div class="ms-clear"></div></div>
+<!--End of the banner-->
+
+
+
+    <!--<h1>INDIAN POST</h1>      
+    <p>Some text that represents "Me"...</p>-->
+	<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  Indicators 
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+   Wrapper for slides 
+  <div class="carousel-inner">
+    <div class="item active">
+      <center> <img src="Smart India Hackathon.jpg" alt="Los Angeles" width="1000" height="200"> </center>
+    </div>
+
+    <div class="item">
+      <img src="indianpost.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="ny.jpg" alt="New York">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a> -->
+  
+
+ <marquee> <b>The Indian Postal system has been made online fully.</b></marquee>
+
+ <div class="container-fluid bg-3 text-center">    
+  <h3>CLICK N BOOK</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+     
+      <form action="/track_consignment" method="GET">
+          <input type="submit" name="upvote" value="Track Your Consignment"/>
+      </form>
+
+
+    </div>
+    <div class="col-sm-3"> 
+     
+      <form action="/track_postoffice" method="GET">
+          <input type="submit" name="upvote" value="Locate your post Office"/>
+      </form>
+    </div>
+    <div class="col-sm-3"> 
+     
+      <form action="/find_pincode" method="GET">
+          <input type="submit" name="upvote" value="Find your pincode"/>
+      </form>
+      </div>
+    <div class="col-sm-3">
+      
+      <form action="/calculate_postage" method="GET">
+          <input type="submit" name="upvote" value="Calculate postage"/>
+      </form>
+    </div>
+  </div>
+</div><br>
+
+<div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv2FL9kU_4sTsY6pDdnW98VsyhrlHK_owyxrh8X2niEKDY-KKR" alt="Lights" style="width:100%">
+          <div class="caption">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="https://thumb9.shutterstock.com/display_pic_with_logo/687307/494083435/stock-vector-post-office-cartoon-style-vector-isolated-on-white-background-494083435.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://cnet2.cbsistatic.com/img/H_zPLL8-QTZOLxJvgHQ1Jkz0EgY=/830x467/2013/07/10/f0bcef02-67c2-11e3-a665-14feb5ca9861/maps_routemap.png" alt="Fjords" style="width:100%">
+          <div class="caption">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9K8rg8N0Kh8oCnVi2q550THOm3xl4hsPr_-juSiprdTm0T1Jb" alt="Fjords" style="width:100%">
+          <div class="caption">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+<br><br>
+
+<footer class="site-footer">
+                        
+                        <div class="bottom-footer container-fluid">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    
+
+
+
+
+
+
+
+
+
+
+
+    <h5><span id="ctl00_ucLastUpdatedOn_lblLastUpdatedOn1" title="This website belongs to  Department of Posts, Ministry of Communications, Government of India">This website belongs to  Department of Posts, Ministry of Communications, Government of India</span></h5>
+    <br/>
+    <p><span id="ctl00_ucLastUpdatedOn_lblLastUpdatedOn2" title="Site Created and Maintained by">Site Created and Maintained by</span>&nbsp;<span id="ctl00_ucLastUpdatedOn_lblLastUpdatedOn3" title="Tata Consultancy Services Ltd.">Tata Consultancy Services Ltd.</span></p>
+    
+    <p>
+        <span id="ctl00_ucLastUpdatedOn_lblLastUpdatedOn5" title="Last updated on  ">Last updated on  </span>&nbsp;<span id="ctl00_ucLastUpdatedOn_lblLastUpdatedOn">25-Mar-2018</span></p>
+
+
+
+                                </div>
+                                <div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+	<div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ3" width="100%" class="ms-WPBody noindex " OnlyForMePart="true" allowDelete="false" style="" ><div class="ms-rtestate-field"><div class="col-xs-3" > 
+				<h4> Registered Office Address</h4>
+				<br>
+				<address>
+				Department of Posts <br>
+				Dak Bhawan, Sansad Marg <br>
+				New-Delhi-110001. 
+				</address>
+			</div>
+			</div><div class="ms-clear"></div></div>
+</div>
+                            </div>
+    </div>
+                    </footer>
+
+
+    
+</body>
+</html>

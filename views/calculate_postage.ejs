@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://powerful-journey-58722.herokuapp.com/">Indian Post</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="https://powerful-journey-58722.herokuapp.com/"> Home</a></li>
+        
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+           <!-- <form action="/main_server" method="get">
+                <button type="submit">Login</button>
+            </form> -->
+           <a href="https://powerful-journey-58722.herokuapp.com/main_server">Login</a> 
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h2>Calculate postage</h2>
+  <p>Type of service:</p>
+  <form action="/calculate_postage" method="post" >
+    <div class="radio">
+      <label><input type="radio" name="optradio">DOMESTIC</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">INTERNATIONAL</label>
+    </div>
+    
+      
+    <div class="container">           
+      <table class="table table-bordered">
+      <thead>
+        <tr>
+         <th>FROM</th>
+         <th>TO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td>
+          <!-- <select class="form-control" id="sel1"> -->
+          <input type="text" name="source_pincode">
+       <!--  <option>DELHI</option>
+        <option>MUMBAI</option>
+        <option>CHENNAI</option>
+        <option>KOLKATA</option> -->
+       </td>
+        <td>
+         <!--  <select class="form-control" id="sel1"> -->
+          <input type="text" name="destination_pincode">
+       <!--  <option>DELHI</option>
+        <option>MUMBAI</option>
+        <option>CHENNAI</option>
+        <option>KOLKATA</option> -->
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    
+      <br>
+      <label for="sel1">Article Details:</label>
+       <select class="form-control" id="sel1" name="type">
+        <option>letter</option>
+        <option>parcel</option>
+        <option>book packet</option>
+        <option>postcard</option>
+      </select>
+      
+      <br>
+      
+    <div class="container">      
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>WEIGHT(in gm)</th>
+        <th>LENGTH(in cm)</th>
+        <th>WIDTH(in cm)</th>
+          <th>HEIGHT(in cm)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" class="form-control" id="usr" name="weight"></td>
+        <td><input type="text" class="form-control" id="usr" name="length"></td>
+        <td><input type="text" class="form-control" id="usr" name="width"></td>
+          <td><input type="text" class="form-control" id="usr" name="height"></td>
+      </tr>
+    </tbody>
+  </table>
+        <br>
+</div>
+      
+      <button type="SUBMIT" class="btn" onsubmit="setTimeout(function(){window.location.reload();},10)">SUBMIT</button>
+
+      <h1>Approximate Postage: <%=price%></h1>
+  </form>
+</div>
+
+    
+</body>
+</html>
